@@ -673,6 +673,10 @@ jobs:
 
 [![Yarn workspaces example](https://github.com/cypress-io/github-action/workflows/example-start-and-yarn-workspaces/badge.svg?branch=master)](.github/workflows/example-start-and-yarn-workspaces.yml)
 
+### Pnpm workspaces
+
+This action should discover [pnpm](https://pnpm.js.org/) workspaces correctly. For example, see folder [examples/basic-pnpm](examples/basic-pnpm) and workflow file [example-basic-pnpm.yml](.github/workflows/example-basic-pnpm.yml)
+
 ### Custom cache key
 
 Sometimes the default cache key does not work. For example, if you cannot share the Node modules across Node versions due to native extensions. In that case pass your own `cache-key` parameter.
@@ -770,14 +774,14 @@ Finally, you might not need this GH Action at all. For example, if you want to s
 ### More examples
 
 <!-- prettier-ignore-start -->
-Name | Description
---- | ---
-[cypress-gh-action-example](https://github.com/bahmutov/cypress-gh-action-example) | uses Yarn, and runs in parallel on several versions of Node, also different browsers
-[cypress-gh-action-monorepo](https://github.com/bahmutov/cypress-gh-action-monorepo) | splits install and running tests commands, runs Cypress from sub-folder
-[cypress-gh-action-subfolders](https://github.com/bahmutov/cypress-gh-action-subfolders) | separate folder for Cypress dependencies
-[cypress-gh-action-split-install](https://github.com/bahmutov/cypress-gh-action-split-install) | only install NPM dependencies, then install and cache Cypress binary yourself
-[cypress-gh-action-vue-example](https://github.com/cypress-io/cypress-gh-action-vue-example) | project was scaffolded using Vue CLI
-[gh-action-and-gh-integration](https://github.com/cypress-io/gh-action-and-gh-integration) | records to the dashboard and has [Cypress GH Integration](https://on.cypress.io/github-integration) app installed
+| Name                                                                                           | Description                                                                                                       |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [cypress-gh-action-example](https://github.com/bahmutov/cypress-gh-action-example)             | uses Yarn, and runs in parallel on several versions of Node, also different browsers                              |
+| [cypress-gh-action-monorepo](https://github.com/bahmutov/cypress-gh-action-monorepo)           | splits install and running tests commands, runs Cypress from sub-folder                                           |
+| [cypress-gh-action-subfolders](https://github.com/bahmutov/cypress-gh-action-subfolders)       | separate folder for Cypress dependencies                                                                          |
+| [cypress-gh-action-split-install](https://github.com/bahmutov/cypress-gh-action-split-install) | only install NPM dependencies, then install and cache Cypress binary yourself                                     |
+| [cypress-gh-action-vue-example](https://github.com/cypress-io/cypress-gh-action-vue-example)   | project was scaffolded using Vue CLI                                                                              |
+| [gh-action-and-gh-integration](https://github.com/cypress-io/gh-action-and-gh-integration)     | records to the dashboard and has [Cypress GH Integration](https://on.cypress.io/github-integration) app installed |
 <!-- prettier-ignore-end -->
 
 ## Notes
